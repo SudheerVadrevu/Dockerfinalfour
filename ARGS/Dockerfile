@@ -1,6 +1,9 @@
 ARG version
-FROM almalinux:${version}
-ARG siddhu
-ARG sindhu
+FROM almalinux:${version:-8}
+ARG siddhu="wastfellow"
+ARG sindhu="sodhi"
 RUN echo "siddhu doing ${siddhu} sindhus ${sindhu} "
 CMD ["sleep", "100"]
+
+
+# How can you check OS of your Server? cat /etc?*release
