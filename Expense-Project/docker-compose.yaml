@@ -11,7 +11,7 @@ services:
     image: mysql:0.0
     container_name: mysql
     volumes:
-      - source: sweden
+      - source: german
         target: /var/lib/mysql
         type: volume
 
