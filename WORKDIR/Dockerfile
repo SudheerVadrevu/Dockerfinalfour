@@ -1,4 +1,4 @@
 FROM almalinux:9
 RUN mkdir sprite
-RUN cd sprite
+WORKDIR /sprite
 CMD ["sleep", "100"]
