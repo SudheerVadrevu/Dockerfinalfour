@@ -4,7 +4,7 @@ networks:
     name: sweden
 volumes:
   sweden:
-    external: true
+    external: false
 
 services:
   mysql:
