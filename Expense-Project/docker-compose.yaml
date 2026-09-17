@@ -3,7 +3,7 @@ networks:
   default:
     name: sweden
 volumes:
-  sweden:
+  german:
     external: false
 
 services:
