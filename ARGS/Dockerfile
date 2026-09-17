@@ -3,7 +3,7 @@ FROM almalinux:${version:-8}
 ARG siddhu="wastfellow"
 ARG sindhu="sodhi"
 ENV swathi="smallgirl"
-RUN echo "siddhu doing ${siddhu} sindhus ${sindhu} "
+RUN echo "siddhu doing ${siddhu} sindhus ${sindhu}  and swathi is ${swathi} "
 CMD ["sleep", "100"]
 
 
