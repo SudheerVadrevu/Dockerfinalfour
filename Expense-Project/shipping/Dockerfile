@@ -9,11 +9,13 @@ COPY pom.xml /opt/shipping/
 RUN mvn dependency:resolve
 COPY src /opt/shipping/src/
 RUN mvn package
+CMD [ "java", "-Xmn256m", "-Xmx768m", "-jar", "shipping.jar" ]
+
 
 #
 # Run
 #
-FROM openjdk:8-jre-alpine3.9
+FROM openjdk:8u212-jre-alpine3.9
 
 EXPOSE 8080
 
