@@ -8,7 +8,8 @@ volumes:
 
 services:
   mysql:
-    image: mysql:0.0
+    # image: mysql:0.0
+    image: sudheer1995/birthdaymysql:0.0
     container_name: mysql
     volumes:
       - source: german
@@ -16,7 +17,8 @@ services:
         type: volume
 
   backend:
-    image: backend:0.0
+    # image: backend:0.0
+    image: sudheer1995/birthdaybackend:0.0
     container_name: backend
     command: sh -c "sleep 40 && node /opt/server/index.js"
     depends_on:
@@ -25,7 +27,8 @@ services:
       - 8080:8080
   
   frontend:
-    image: frontend:0.0
+    # image: frontend:0.0
+    image: sudheer1995/birthdayfrontend:0.0
     container_name: frontend
     depends_on:
       - backend
